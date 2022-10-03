@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,25 @@
   to {
     transform: rotate(360deg);
   }
+} */
+ul,li {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+nav {
+  padding-top: 20px;
+  font-size: 1.2em;
+  width: 150px;
+  float: left;
+  border-radius: 8px;
+  height: 250px;
+  background-color: #22AE86;
 }
