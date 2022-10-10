@@ -3,7 +3,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 export const Sidemenu = () => {
   return (
-    <nav>
+    <nav className='navbarClass'>
      <Link to="/">Home</Link>
      <Link to="/UserPage">User</Link>
      <Link to="/RolesPage">Roles</Link>
@@ -13,4 +13,4 @@ export const Sidemenu = () => {
   )
 }
 
-// export default Sidemenu
+export default Sidemenu

@@ -4,9 +4,15 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { v4 } from 'uuid'
 import axios from 'axios'
+import { json } from 'react-router-dom'
 import { Navbar } from '../components/Navbar'
-export function CategoriesPage() {
+export function RedactPage() {
+ function redactName(){
+       console.log("he;e;;e");
+      //  console.log();
 
+
+ }
   const [categories, setCategoty] = useState([]);
 
   useEffect(() => {
@@ -32,6 +38,7 @@ export function CategoriesPage() {
         categories.map((category) =>
           <div className='category' key={v4()}>
             <p>{category.id}</p>
+            <button className='redactButton' onClick={redactName} >Redact</button>
             <p>{category.name}</p>
             <p>{category.photoId}</p>
           </div>
@@ -41,5 +48,3 @@ export function CategoriesPage() {
     </>
   )
 }
-
-// export default CategoriesPage

@@ -2,17 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './App'
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HomePage } from './pages/HomePage';
+import { RolesPage } from './pages/RolesPage';
 import { UserPage } from './pages/UserPage';
 import { CategoriesPage } from './pages/CategoriesPage';
 import { GoodsPage } from './pages/GoodsPage';
 import {
   createBrowserRouter,
   RouterProvider,
-  // Route,
+  Route,
 } from "react-router-dom";
+import { RedactPage } from './pages/RedactPage';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,7 +30,15 @@ const router = createBrowserRouter([
   {
     path: "/GoodsPage",
     element: <GoodsPage />,
-  }
+  },
+  {
+    path: "/RolesPage",
+    element: <RolesPage />,
+  },
+  {
+    path:"/RedactPage",
+    element: <RedactPage />
+  },
 ]);
 
 
